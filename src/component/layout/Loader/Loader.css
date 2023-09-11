@@ -1,0 +1,22 @@
+.Loading{
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    display:grid;
+    max-width: 100%;
+    place-items: center;
+}
+
+.Loading>div >img{
+    width:20vmax;
+    /* background-color: tomato; */
+    height: 20vmax;
+   
+    animation: loadingRotate 2000ms linear infinite;
+}
+
+@keyframes loadingRotate {
+    to{
+        transform: rotateZ(360deg);
+    }
+}
